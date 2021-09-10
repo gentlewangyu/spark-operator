@@ -8,6 +8,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "spark-operator.fullname" . }}
+  namespace: {{ default .Release.Namespace .Values.sparkJobNamespace }}
   labels:
     {{- include "spark-operator.labels" . | nindent 4 }}
 spec:
