@@ -19,6 +19,12 @@ rules:
   - services
   verbs:
   - "*"
+- apiGroups:
+    - ""
+  resources:
+    - configmaps
+  verbs:
+    - "*"
 
 ---
 
