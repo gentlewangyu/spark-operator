@@ -50,6 +50,13 @@ spec:
     instances: 1
     memory: "512m"
     hostNetwork: true
+    lifecycle:
+      preStop:
+        exec:
+          command:
+          - /bin/bash
+          - -c
+          - touch /var/run/killspark && sleep 65
     labels:
       version: 3.1.2
     volumeMounts:
