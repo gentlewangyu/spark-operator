@@ -50,6 +50,7 @@ spec:
     instances: 1
     memory: "512m"
     hostNetwork: true
+    terminationGracePeriodSeconds: 60
     lifecycle:
       preStop:
         exec:
