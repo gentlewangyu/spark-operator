@@ -21,7 +21,7 @@ metadata:
 spec:
   type: Scala
   mode: cluster
-  image: "registry.qtt6.cn/qtt-di-public/spark-kepler:3.1.2-0"
+  image: "registry.qtt6.cn/qtt-di-public/spark-kepler:3.1.2-1"
   imagePullPolicy: Always
   mainClass: org.apache.spark.examples.SparkPi
   mainApplicationFile: "local:///opt/spark/examples/jars/spark-examples_2.12-3.1.2.jar"
@@ -40,7 +40,7 @@ spec:
     hostNetwork: true
     labels:
       version: 3.1.2
-    serviceAccount: spark
+    serviceAccount: spark-operator-spark
     volumeMounts:
       - name: "test-volume"
         mountPath: "/tmp"
