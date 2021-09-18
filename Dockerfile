@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ARG SPARK_IMAGE=registry.qtt6.cn/qtt-di-public/spark-kepler:3.1.2-1
+ARG SPARK_IMAGE=registry.qtt6.cn/qtt-di-public/spark-kepler:3.1.2-2
 
 FROM golang:1.14.1-alpine as builder
 
