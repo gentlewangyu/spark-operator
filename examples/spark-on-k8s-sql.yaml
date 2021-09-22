@@ -25,7 +25,7 @@ spec:
   imagePullPolicy: Always
   mainClass: org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver
   mainApplicationFile: "local:///opt/spark/examples/jars/spark-hive-thriftserver_2.12-3.1.2.jar"
-  arguments: ["-ftest_spark_on_k8s.sql"]
+  arguments: ["-fhdfs://sys1/tmp/test_spark_on_k8s.sql"]
   #deps:
   #  files:
   #    - local://test_spark_on_k8s.sql
